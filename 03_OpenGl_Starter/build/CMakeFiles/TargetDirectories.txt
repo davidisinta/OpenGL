@@ -1,0 +1,4 @@
+/Users/davidisinta/Documents/OpenGL/03_OpenGl_Starter/build/CMakeFiles/glad.dir
+/Users/davidisinta/Documents/OpenGL/03_OpenGl_Starter/build/CMakeFiles/Tutorial.dir
+/Users/davidisinta/Documents/OpenGL/03_OpenGl_Starter/build/CMakeFiles/edit_cache.dir
+/Users/davidisinta/Documents/OpenGL/03_OpenGl_Starter/build/CMakeFiles/rebuild_cache.dir
