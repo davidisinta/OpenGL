@@ -130,17 +130,17 @@ glad/fast:
 .PHONY : glad/fast
 
 #=============================================================================
-# Target rules for targets named Tutorial
+# Target rules for targets named Main
 
 # Build rule for target.
-Tutorial: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Tutorial
-.PHONY : Tutorial
+Main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Main
+.PHONY : Main
 
 # fast build rule for target.
-Tutorial/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tutorial.dir/build.make CMakeFiles/Tutorial.dir/build
-.PHONY : Tutorial/fast
+Main/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Main.dir/build.make CMakeFiles/Main.dir/build
+.PHONY : Main/fast
 
 glad.o: glad.c.o
 .PHONY : glad.o
@@ -166,29 +166,29 @@ glad.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/glad.dir/build.make CMakeFiles/glad.dir/glad.c.s
 .PHONY : glad.c.s
 
-tutorial.o: tutorial.cxx.o
-.PHONY : tutorial.o
+main.o: main.cpp.o
+.PHONY : main.o
 
 # target to build an object file
-tutorial.cxx.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tutorial.dir/build.make CMakeFiles/Tutorial.dir/tutorial.cxx.o
-.PHONY : tutorial.cxx.o
+main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Main.dir/build.make CMakeFiles/Main.dir/main.cpp.o
+.PHONY : main.cpp.o
 
-tutorial.i: tutorial.cxx.i
-.PHONY : tutorial.i
+main.i: main.cpp.i
+.PHONY : main.i
 
 # target to preprocess a source file
-tutorial.cxx.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tutorial.dir/build.make CMakeFiles/Tutorial.dir/tutorial.cxx.i
-.PHONY : tutorial.cxx.i
+main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Main.dir/build.make CMakeFiles/Main.dir/main.cpp.i
+.PHONY : main.cpp.i
 
-tutorial.s: tutorial.cxx.s
-.PHONY : tutorial.s
+main.s: main.cpp.s
+.PHONY : main.s
 
 # target to generate assembly for a file
-tutorial.cxx.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tutorial.dir/build.make CMakeFiles/Tutorial.dir/tutorial.cxx.s
-.PHONY : tutorial.cxx.s
+main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Main.dir/build.make CMakeFiles/Main.dir/main.cpp.s
+.PHONY : main.cpp.s
 
 # Help Target
 help:
@@ -198,14 +198,14 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... Tutorial"
+	@echo "... Main"
 	@echo "... glad"
 	@echo "... glad.o"
 	@echo "... glad.i"
 	@echo "... glad.s"
-	@echo "... tutorial.o"
-	@echo "... tutorial.i"
-	@echo "... tutorial.s"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
 .PHONY : help
 
 

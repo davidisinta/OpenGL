@@ -64,12 +64,12 @@ CMAKE_BINARY_DIR = /Users/davidisinta/Documents/OpenGL/03_OpenGl_Starter/build
 
 # The main recursive "all" target.
 all: CMakeFiles/glad.dir/all
-all: CMakeFiles/Tutorial.dir/all
+all: CMakeFiles/Main.dir/all
 .PHONY : all
 
 # The main recursive "codegen" target.
 codegen: CMakeFiles/glad.dir/codegen
-codegen: CMakeFiles/Tutorial.dir/codegen
+codegen: CMakeFiles/Main.dir/codegen
 .PHONY : codegen
 
 # The main recursive "preinstall" target.
@@ -78,7 +78,7 @@ preinstall:
 
 # The main recursive "clean" target.
 clean: CMakeFiles/glad.dir/clean
-clean: CMakeFiles/Tutorial.dir/clean
+clean: CMakeFiles/Main.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -114,36 +114,36 @@ CMakeFiles/glad.dir/clean:
 .PHONY : CMakeFiles/glad.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/Tutorial.dir
+# Target rules for target CMakeFiles/Main.dir
 
 # All Build rule for target.
-CMakeFiles/Tutorial.dir/all: CMakeFiles/glad.dir/all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tutorial.dir/build.make CMakeFiles/Tutorial.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tutorial.dir/build.make CMakeFiles/Tutorial.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/davidisinta/Documents/OpenGL/03_OpenGl_Starter/build/CMakeFiles --progress-num=1,2 "Built target Tutorial"
-.PHONY : CMakeFiles/Tutorial.dir/all
+CMakeFiles/Main.dir/all: CMakeFiles/glad.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Main.dir/build.make CMakeFiles/Main.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Main.dir/build.make CMakeFiles/Main.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/davidisinta/Documents/OpenGL/03_OpenGl_Starter/build/CMakeFiles --progress-num=1,2 "Built target Main"
+.PHONY : CMakeFiles/Main.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/Tutorial.dir/rule: cmake_check_build_system
+CMakeFiles/Main.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/davidisinta/Documents/OpenGL/03_OpenGl_Starter/build/CMakeFiles 4
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Tutorial.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Main.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/davidisinta/Documents/OpenGL/03_OpenGl_Starter/build/CMakeFiles 0
-.PHONY : CMakeFiles/Tutorial.dir/rule
+.PHONY : CMakeFiles/Main.dir/rule
 
 # Convenience name for target.
-Tutorial: CMakeFiles/Tutorial.dir/rule
-.PHONY : Tutorial
+Main: CMakeFiles/Main.dir/rule
+.PHONY : Main
 
 # codegen rule for target.
-CMakeFiles/Tutorial.dir/codegen:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tutorial.dir/build.make CMakeFiles/Tutorial.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/davidisinta/Documents/OpenGL/03_OpenGl_Starter/build/CMakeFiles --progress-num=1,2 "Finished codegen for target Tutorial"
-.PHONY : CMakeFiles/Tutorial.dir/codegen
+CMakeFiles/Main.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Main.dir/build.make CMakeFiles/Main.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/davidisinta/Documents/OpenGL/03_OpenGl_Starter/build/CMakeFiles --progress-num=1,2 "Finished codegen for target Main"
+.PHONY : CMakeFiles/Main.dir/codegen
 
 # clean rule for target.
-CMakeFiles/Tutorial.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tutorial.dir/build.make CMakeFiles/Tutorial.dir/clean
-.PHONY : CMakeFiles/Tutorial.dir/clean
+CMakeFiles/Main.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Main.dir/build.make CMakeFiles/Main.dir/clean
+.PHONY : CMakeFiles/Main.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
