@@ -54,10 +54,7 @@ int main(int argc, char* argv[]){
                 gameIsRunning= false;
                 endGame(window);
             }
-
-            
         }
     }
-
     return 0;
 }
