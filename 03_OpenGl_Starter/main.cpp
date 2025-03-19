@@ -56,7 +56,7 @@ void InitializeProgram(){
         exit(1);
     }
 
-    //print gl info for debugging
+    //print gl info for debugging.
     printGLInfo();
 
     
