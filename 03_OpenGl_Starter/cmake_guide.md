@@ -6,5 +6,5 @@
  cmake --build .
 
 # Then run project as 
-./main.cpp
+./main
  

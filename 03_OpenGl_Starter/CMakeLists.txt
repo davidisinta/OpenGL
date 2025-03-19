@@ -11,6 +11,9 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 # Find OpenGL
 find_package(OpenGL REQUIRED)
 
+#Find GLFW
+find_package(glfw3 REQUIRED)
+
 # Find SDL2
 find_package(SDL2 REQUIRED)
 include_directories(${SDL2_INCLUDE_DIRS})
@@ -22,6 +25,6 @@ target_include_directories(glad PRIVATE include)
 # Add an executable target
 add_executable(Main main.cpp)
 
-# Link OpenGL, SDL2, and GLAD to the target
-target_include_directories(Main PRIVATE ${OPENGL_INCLUDE_DIRS} ${SDL2_INCLUDE_DIRS} include)
-target_link_libraries(Main PRIVATE ${OPENGL_LIBRARIES} ${SDL2_LIBRARIES} glad)
+# Link OpenGL, SDL2, GLFW, and GLAD to the target
+target_include_directories(Main PRIVATE ${OPENGL_INCLUDE_DIRS} ${SDL2_INCLUDE_DIRS} ${GLFW_INCLUDE_DIRS} include)
+target_link_libraries(Main PRIVATE ${OPENGL_LIBRARIES} ${SDL2_LIBRARIES} glfw glad)
