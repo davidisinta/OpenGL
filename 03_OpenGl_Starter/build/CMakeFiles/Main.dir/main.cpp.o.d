@@ -37,6 +37,19 @@ CMakeFiles/Main.dir/main.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_uintptr_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/_types/_intmax_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/_types/_uintmax_t.h \
+  /opt/homebrew/include/GLFW/glfw3.h \
+  /opt/homebrew/Cellar/llvm/19.1.7/bin/../include/c++/v1/stddef.h \
+  /opt/homebrew/Cellar/llvm/19.1.7/lib/clang/19/include/stddef.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/stddef.h \
+  /opt/homebrew/Cellar/llvm/19.1.7/lib/clang/19/include/__stddef_header_macro.h \
+  /opt/homebrew/Cellar/llvm/19.1.7/lib/clang/19/include/__stddef_ptrdiff_t.h \
+  /opt/homebrew/Cellar/llvm/19.1.7/lib/clang/19/include/__stddef_size_t.h \
+  /opt/homebrew/Cellar/llvm/19.1.7/lib/clang/19/include/__stddef_rsize_t.h \
+  /opt/homebrew/Cellar/llvm/19.1.7/lib/clang/19/include/__stddef_wchar_t.h \
+  /opt/homebrew/Cellar/llvm/19.1.7/lib/clang/19/include/__stddef_null.h \
+  /opt/homebrew/Cellar/llvm/19.1.7/lib/clang/19/include/__stddef_nullptr_t.h \
+  /opt/homebrew/Cellar/llvm/19.1.7/lib/clang/19/include/__stddef_max_align_t.h \
+  /opt/homebrew/Cellar/llvm/19.1.7/lib/clang/19/include/__stddef_offsetof.h \
   /opt/homebrew/Cellar/llvm/19.1.7/bin/../include/c++/v1/iostream \
   /opt/homebrew/Cellar/llvm/19.1.7/bin/../include/c++/v1/version \
   /opt/homebrew/Cellar/llvm/19.1.7/bin/../include/c++/v1/ios \
@@ -65,18 +78,6 @@ CMakeFiles/Main.dir/main.cpp.o: \
   /opt/homebrew/Cellar/llvm/19.1.7/bin/../include/c++/v1/__type_traits/remove_cv.h \
   /opt/homebrew/Cellar/llvm/19.1.7/bin/../include/c++/v1/__type_traits/remove_const.h \
   /opt/homebrew/Cellar/llvm/19.1.7/bin/../include/c++/v1/__type_traits/remove_volatile.h \
-  /opt/homebrew/Cellar/llvm/19.1.7/bin/../include/c++/v1/stddef.h \
-  /opt/homebrew/Cellar/llvm/19.1.7/lib/clang/19/include/stddef.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/stddef.h \
-  /opt/homebrew/Cellar/llvm/19.1.7/lib/clang/19/include/__stddef_header_macro.h \
-  /opt/homebrew/Cellar/llvm/19.1.7/lib/clang/19/include/__stddef_ptrdiff_t.h \
-  /opt/homebrew/Cellar/llvm/19.1.7/lib/clang/19/include/__stddef_size_t.h \
-  /opt/homebrew/Cellar/llvm/19.1.7/lib/clang/19/include/__stddef_rsize_t.h \
-  /opt/homebrew/Cellar/llvm/19.1.7/lib/clang/19/include/__stddef_wchar_t.h \
-  /opt/homebrew/Cellar/llvm/19.1.7/lib/clang/19/include/__stddef_null.h \
-  /opt/homebrew/Cellar/llvm/19.1.7/lib/clang/19/include/__stddef_nullptr_t.h \
-  /opt/homebrew/Cellar/llvm/19.1.7/lib/clang/19/include/__stddef_max_align_t.h \
-  /opt/homebrew/Cellar/llvm/19.1.7/lib/clang/19/include/__stddef_offsetof.h \
   /opt/homebrew/Cellar/llvm/19.1.7/bin/../include/c++/v1/__concepts/common_reference_with.h \
   /opt/homebrew/Cellar/llvm/19.1.7/bin/../include/c++/v1/__concepts/convertible_to.h \
   /opt/homebrew/Cellar/llvm/19.1.7/bin/../include/c++/v1/__type_traits/is_convertible.h \
@@ -759,67 +760,4 @@ CMakeFiles/Main.dir/main.cpp.o: \
   /opt/homebrew/Cellar/llvm/19.1.7/bin/../include/c++/v1/stack \
   /opt/homebrew/Cellar/llvm/19.1.7/bin/../include/c++/v1/__fwd/stack.h \
   /opt/homebrew/Cellar/llvm/19.1.7/bin/../include/c++/v1/print \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/unistd.h \
-  /Library/Frameworks/SDL2.framework/Headers/SDL.h \
-  /Library/Frameworks/SDL2.framework/Headers/SDL_main.h \
-  /Library/Frameworks/SDL2.framework/Headers/SDL_stdinc.h \
-  /Library/Frameworks/SDL2.framework/Headers/SDL_config.h \
-  /Library/Frameworks/SDL2.framework/Headers/SDL_platform.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/AvailabilityMacros.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/TargetConditionals.h \
-  /Library/Frameworks/SDL2.framework/Headers/begin_code.h \
-  /Library/Frameworks/SDL2.framework/Headers/close_code.h \
-  /Library/Frameworks/SDL2.framework/Headers/SDL_config_macosx.h \
-  /opt/homebrew/Cellar/llvm/19.1.7/bin/../include/c++/v1/inttypes.h \
-  /opt/homebrew/Cellar/llvm/19.1.7/lib/clang/19/include/inttypes.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/inttypes.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/xlocale/_inttypes.h \
-  /opt/homebrew/Cellar/llvm/19.1.7/bin/../include/c++/v1/float.h \
-  /opt/homebrew/Cellar/llvm/19.1.7/lib/clang/19/include/float.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/float.h \
-  /Library/Frameworks/SDL2.framework/Headers/SDL_assert.h \
-  /Library/Frameworks/SDL2.framework/Headers/SDL_atomic.h \
-  /Library/Frameworks/SDL2.framework/Headers/SDL_audio.h \
-  /Library/Frameworks/SDL2.framework/Headers/SDL_error.h \
-  /Library/Frameworks/SDL2.framework/Headers/SDL_endian.h \
-  /Library/Frameworks/SDL2.framework/Headers/SDL_mutex.h \
-  /Library/Frameworks/SDL2.framework/Headers/SDL_thread.h \
-  /Library/Frameworks/SDL2.framework/Headers/SDL_rwops.h \
-  /Library/Frameworks/SDL2.framework/Headers/SDL_clipboard.h \
-  /Library/Frameworks/SDL2.framework/Headers/SDL_cpuinfo.h \
-  /opt/homebrew/Cellar/llvm/19.1.7/lib/clang/19/include/arm_neon.h \
-  /opt/homebrew/Cellar/llvm/19.1.7/lib/clang/19/include/arm_bf16.h \
-  /opt/homebrew/Cellar/llvm/19.1.7/lib/clang/19/include/arm_vector_types.h \
-  /Library/Frameworks/SDL2.framework/Headers/SDL_events.h \
-  /Library/Frameworks/SDL2.framework/Headers/SDL_video.h \
-  /Library/Frameworks/SDL2.framework/Headers/SDL_pixels.h \
-  /Library/Frameworks/SDL2.framework/Headers/SDL_rect.h \
-  /Library/Frameworks/SDL2.framework/Headers/SDL_surface.h \
-  /Library/Frameworks/SDL2.framework/Headers/SDL_blendmode.h \
-  /Library/Frameworks/SDL2.framework/Headers/SDL_keyboard.h \
-  /Library/Frameworks/SDL2.framework/Headers/SDL_keycode.h \
-  /Library/Frameworks/SDL2.framework/Headers/SDL_scancode.h \
-  /Library/Frameworks/SDL2.framework/Headers/SDL_mouse.h \
-  /Library/Frameworks/SDL2.framework/Headers/SDL_joystick.h \
-  /Library/Frameworks/SDL2.framework/Headers/SDL_guid.h \
-  /Library/Frameworks/SDL2.framework/Headers/SDL_gamecontroller.h \
-  /Library/Frameworks/SDL2.framework/Headers/SDL_sensor.h \
-  /Library/Frameworks/SDL2.framework/Headers/SDL_quit.h \
-  /Library/Frameworks/SDL2.framework/Headers/SDL_gesture.h \
-  /Library/Frameworks/SDL2.framework/Headers/SDL_touch.h \
-  /Library/Frameworks/SDL2.framework/Headers/SDL_filesystem.h \
-  /Library/Frameworks/SDL2.framework/Headers/SDL_haptic.h \
-  /Library/Frameworks/SDL2.framework/Headers/SDL_hidapi.h \
-  /Library/Frameworks/SDL2.framework/Headers/SDL_hints.h \
-  /Library/Frameworks/SDL2.framework/Headers/SDL_loadso.h \
-  /Library/Frameworks/SDL2.framework/Headers/SDL_log.h \
-  /Library/Frameworks/SDL2.framework/Headers/SDL_messagebox.h \
-  /Library/Frameworks/SDL2.framework/Headers/SDL_metal.h \
-  /Library/Frameworks/SDL2.framework/Headers/SDL_power.h \
-  /Library/Frameworks/SDL2.framework/Headers/SDL_render.h \
-  /Library/Frameworks/SDL2.framework/Headers/SDL_shape.h \
-  /Library/Frameworks/SDL2.framework/Headers/SDL_system.h \
-  /Library/Frameworks/SDL2.framework/Headers/SDL_timer.h \
-  /Library/Frameworks/SDL2.framework/Headers/SDL_version.h \
-  /Library/Frameworks/SDL2.framework/Headers/SDL_locale.h \
-  /Library/Frameworks/SDL2.framework/Headers/SDL_misc.h
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/unistd.h

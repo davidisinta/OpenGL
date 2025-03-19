@@ -96,6 +96,7 @@ Main_EXTERNAL_OBJECTS =
 Main: CMakeFiles/Main.dir/main.cpp.o
 Main: CMakeFiles/Main.dir/build.make
 Main: /Library/Frameworks/SDL2.framework/Versions/A/SDL2
+Main: /opt/homebrew/lib/libglfw.3.4.dylib
 Main: libglad.a
 Main: CMakeFiles/Main.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/davidisinta/Documents/OpenGL/03_OpenGl_Starter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable Main"
