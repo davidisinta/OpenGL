@@ -39,7 +39,6 @@ string readShaderFile(string filePath);
 string s1 = readShaderFile("../shader.vert");
 string s2 = readShaderFile("../shader.frag");
 
-
 const char *vertexShaderSource = s1.c_str();
 const char *fragmentShaderSource = s2.c_str();
 
@@ -48,8 +47,6 @@ int main(){
     InitializeProgram();
     MainLoop();
     CleanUp();
-
-    
 
     return 0;
     
@@ -175,6 +172,8 @@ void MainLoop(){
     // VAOs requires a call to glBindVertexArray anyways so we generally don't unbind VAOs (nor VBOs) when it's not directly necessary.
     glBindVertexArray(0);
 
+    float time = 0.0f;
+
 
     while(!quit){
         Input();
@@ -190,9 +189,23 @@ void MainLoop(){
 
         // draw our first triangle
         glUseProgram(shaderProgram);
-        glBindVertexArray(VAO); // seeing as we only have a single VAO there's no need to bind it every time, but we'll do so to keep things a bit more organized
+
+
+        // update the uniform color
+        float greenValue = sin(time) / 2.0f + 0.5f;
+        int vertexColorLocation = glGetUniformLocation(shaderProgram, "ourColor");
+        glUniform4f(vertexColorLocation, 0.0f, greenValue, 0.0f, 1.0f);
+
+        time += 0.0001f;
+
+        if(time > 300.0f){time = 0.0f;}
+        
+
+
+
+
+        glBindVertexArray(VAO);
         glDrawArrays(GL_TRIANGLES, 0, 3);
-        // glBindVertexArray(0); // no need to unbind it every time 
 
         //Update Screen
         SDL_GL_SwapWindow(gGraphicsAppWindow);
