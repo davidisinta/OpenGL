@@ -731,6 +731,7 @@ CMakeFiles/GRAPHICS_APP.dir/graphics_app.cpp.o: /Users/davidisinta/Documents/Ope
   /opt/homebrew/Cellar/llvm/19.1.7/include/c++/v1/print \
   /opt/homebrew/Cellar/llvm/19.1.7/include/c++/v1/queue \
   /opt/homebrew/Cellar/llvm/19.1.7/include/c++/v1/ratio \
+  /opt/homebrew/Cellar/llvm/19.1.7/include/c++/v1/sstream \
   /opt/homebrew/Cellar/llvm/19.1.7/include/c++/v1/stack \
   /opt/homebrew/Cellar/llvm/19.1.7/include/c++/v1/stddef.h \
   /opt/homebrew/Cellar/llvm/19.1.7/include/c++/v1/stdexcept \
@@ -943,6 +944,8 @@ CMakeFiles/GRAPHICS_APP.dir/graphics_app.cpp.o: /Users/davidisinta/Documents/Ope
 /opt/homebrew/Cellar/llvm/19.1.7/include/c++/v1/stdexcept:
 
 /opt/homebrew/Cellar/llvm/19.1.7/include/c++/v1/stddef.h:
+
+/opt/homebrew/Cellar/llvm/19.1.7/include/c++/v1/sstream:
 
 /opt/homebrew/Cellar/llvm/19.1.7/include/c++/v1/__utility/is_valid_range.h:
 
