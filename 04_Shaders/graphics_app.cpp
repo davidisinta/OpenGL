@@ -3,6 +3,10 @@
 
 //Std library
 #include <iostream>
+#include <string>
+#include <fstream>
+
+using namespace std;
 
 //Globals
 int SCREEN_HEIGHT = 480;
@@ -19,19 +23,32 @@ void printGLInfo(){
     std::cout << "Shading Language Version: " << glGetString(GL_SHADING_LANGUAGE_VERSION) << std::endl;
 }
 
+/// @brief Important functions for main fn
+void InitializeProgram();
+void Input();
+void PreDraw();
+void Draw();
+void MainLoop();
+void CleanUp();
+const char* readShaderFile(string filePath);
+
+
 //Shader code
-const char *vertexShaderSource = "#version 330 core\n"
-    "layout (location = 0) in vec3 aPos;\n"
-    "void main()\n"
-    "{\n"
-    "   gl_Position = vec4(aPos.x, aPos.y, aPos.z, 1.0);\n"
-    "}\0";
-const char *fragmentShaderSource = "#version 330 core\n"
-    "out vec4 FragColor;\n"
-    "void main()\n"
-    "{\n"
-    "   FragColor = vec4(1.0f, 0.5f, 0.2f, 1.0f);\n"
-    "}\n\0";
+const char *vertexShaderSource = readShaderFile("../shader.vert");
+const char *fragmentShaderSource = readShaderFile("../shader.frag");
+
+int main(){
+
+    InitializeProgram();
+    MainLoop();
+    CleanUp();
+
+    
+
+    return 0;
+    
+}
+
 
 void InitializeProgram(){
     //Initialize SDL
@@ -82,9 +99,6 @@ void Input(){
         }
     }
 }
-
-void PreDraw(){}
-void Draw(){}
 
 void MainLoop(){
 
@@ -179,21 +193,38 @@ void MainLoop(){
     }
 }
 
+
 void CleanUp(){
     SDL_DestroyWindow(gGraphicsAppWindow);
     SDL_Quit();
 }
 
+void PreDraw(){}
+void Draw(){}
 
+const char* readShaderFile(string filePath){
 
+    string shaderFile;
 
-int main()
-{
-    InitializeProgram();
-    MainLoop();
-    CleanUp();
+    std::ifstream myfile;
+    myfile.open(filePath);
 
-    return 0; 
+    string currLine;
+    if (myfile.is_open()) {
+    while (myfile) {
+        getline (myfile, currLine);
+        shaderFile += currLine;
+        cout << currLine << '\n';
+    }
+    }
+    else {
+    std::cout << "Couldn't open file\n";
+    }
+
+    const char* shader = shaderFile.c_str();
+
+    return shader;
+
 }
 
 
