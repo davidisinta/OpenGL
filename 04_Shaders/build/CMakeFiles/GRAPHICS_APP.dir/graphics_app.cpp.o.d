@@ -822,4 +822,5 @@ CMakeFiles/GRAPHICS_APP.dir/graphics_app.cpp.o: \
   /opt/homebrew/Cellar/llvm/19.1.7/bin/../include/c++/v1/print \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/unistd.h \
   /opt/homebrew/Cellar/llvm/19.1.7/bin/../include/c++/v1/fstream \
-  /opt/homebrew/Cellar/llvm/19.1.7/bin/../include/c++/v1/filesystem
+  /opt/homebrew/Cellar/llvm/19.1.7/bin/../include/c++/v1/filesystem \
+  /opt/homebrew/Cellar/llvm/19.1.7/bin/../include/c++/v1/sstream

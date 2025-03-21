@@ -5,6 +5,7 @@
 #include <iostream>
 #include <string>
 #include <fstream>
+#include <sstream>
 
 using namespace std;
 
@@ -17,10 +18,11 @@ bool quit = false;
 
 //Get Opengl version info
 void printGLInfo(){
-    std::cout << "Vendor: " << glGetString(GL_VENDOR) << std::endl;
-    std::cout << "Renderer: " << glGetString(GL_RENDERER) << std::endl;
-    std::cout << "Version: " << glGetString(GL_VERSION) << std::endl;
-    std::cout << "Shading Language Version: " << glGetString(GL_SHADING_LANGUAGE_VERSION) << std::endl;
+    cout << "Vendor: " << glGetString(GL_VENDOR) << endl;
+    cout << "Renderer: " << glGetString(GL_RENDERER) << endl;
+    cout << "Version: " << glGetString(GL_VERSION) << endl;
+    cout << "Shading Language Version: " << glGetString(GL_SHADING_LANGUAGE_VERSION) << std::endl;
+    cout << "--------------------------------------------------------------\n";
 }
 
 /// @brief Important functions for main fn
@@ -30,12 +32,16 @@ void PreDraw();
 void Draw();
 void MainLoop();
 void CleanUp();
-const char* readShaderFile(string filePath);
+string readShaderFile(string filePath);
 
 
 //Shader code
-const char *vertexShaderSource = readShaderFile("../shader.vert");
-const char *fragmentShaderSource = readShaderFile("../shader.frag");
+string s1 = readShaderFile("../shader.vert");
+string s2 = readShaderFile("../shader.frag");
+
+
+const char *vertexShaderSource = s1.c_str();
+const char *fragmentShaderSource = s2.c_str();
 
 int main(){
 
@@ -202,30 +208,31 @@ void CleanUp(){
 void PreDraw(){}
 void Draw(){}
 
-const char* readShaderFile(string filePath){
+string readShaderFile(string filePath){
 
-    string shaderFile;
-
+    string shaderCode;
     std::ifstream myfile;
-    myfile.open(filePath);
 
-    string currLine;
-    if (myfile.is_open()) {
-    while (myfile) {
-        getline (myfile, currLine);
-        shaderFile += currLine;
-        cout << currLine << '\n';
+    // ensure ifstream objects can throw exceptions:
+    myfile.exceptions (std::ifstream::failbit | std::ifstream::badbit);
+    try {
+        // open file
+        myfile.open(filePath);
+        stringstream shaderStream;
+        // read file's buffer contents into streams
+        shaderStream << myfile.rdbuf();
+        // close file handlers
+        myfile.close();
+        // convert stream into string
+        shaderCode   = shaderStream.str();	
     }
+    catch(std::ifstream::failure e){
+        std::cout << "ERROR::SHADER::FILE_NOT_SUCCESFULLY_READ" << std::endl;
     }
-    else {
-    std::cout << "Couldn't open file\n";
-    }
 
-    const char* shader = shaderFile.c_str();
-
-    return shader;
-
+    return shaderCode;
 }
+
 
 
 
